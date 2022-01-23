@@ -1,0 +1,25 @@
+/*
+Calculate Depreciation of Value
+*/
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+	float amount,price,mid;
+	int roi,t;
+	
+	cout<<"Enter the price"<<endl;
+	cin>>price;
+	
+	cout<<"Enter the rate of interest"<<endl;
+	cin>>roi;
+	
+	cout<<"Enter the time period"<<endl;
+	cin>>t;
+	
+	mid=(1-(roi/100));
+	amount = price*pow(mid, t);
+	
+	cout<<"The depreciation value is: "<<amount;
+}
