@@ -1,0 +1,18 @@
+/*
+Input a number and print all the factors of that number (use loops).
+*/
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	int n;
+	cout<<"Enter n"<<endl;
+	cin>>n;
+	
+	for(int d=1;d<=n;d++){
+		if(n%d==0){
+			cout<<d<<" ";
+		}
+	}
+}
