@@ -1,0 +1,22 @@
+/*
+Take integer inputs till the user enters 0 and print the largest number from all.
+*/
+
+#include<iostream>
+using namespace std;
+
+int main(){
+	int n,max=-99999;
+	cout<<"Enter n"<<endl;
+	cin>>n;
+	
+	while(n!=0){
+		if(n>max){
+			max=n;
+		}
+		cout<<"Enter next number"<<endl;
+		cin>>n;
+	}
+	
+	cout<<max<<endl;
+}
